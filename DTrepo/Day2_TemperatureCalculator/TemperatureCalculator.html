@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calcula</title>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="color: aqua; background-color: azure; text-align: center;">Temperature Calculator</h1>
+
+    <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" style="align-content: center;" />
+    <button onclick="convertToCelsius()" style="text-align: center;">Convert</button>
+
+    <p id = "result"></p>
+
+    <script>
+        function convertToCelsius(){
+            let fahrenheit = document.getElementById("fahrenheit").value;
+            if (fahrenheit === ""){
+                document.getElementById("result").innerText = "Please Enter a Value.";
+                return;
+            }
+
+            let celsius = (fahrenheit - 32) * 5/9;
+            document.getElementById("result").innerText = fahrenheit + "°F = " + celsius.toFixed(2) + "°C";
+        }
+    </script>
+
+</body>
+
+</html>

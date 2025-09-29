@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**div {
+            color: red;
+            font-size: 40px;
+        }**/
+        .box1{
+            color: red;
+            font-size: 40px;
+        }
+        #box1{
+            color: blue;
+            font-size: 40px;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- <h1>Heading</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>this is a paragraph tag</p>
+    <span>span</span>
+    <hr> -->
+
+    <!-- <form>
+        <input type="text" name="email" class="" />
+        <input type="password" name="password" class="" />
+        <button>Login</button>
+    </form> -->
+
+  <!--  <main>
+        <div class="box1"> 
+            Div 1
+        </div>
+        <div id="box1">
+            Div 2
+        </div>
+        <div>
+            Div 3
+        </div>
+
+        
+    </main> -->
+    <input type = "number" placeholder="firstnumber" id = "num1" />
+    <input type = "number" placeholder="secondnumber" id = "num2" />
+    <button onclick="processor()">Process</button>
+<script>
+    function processor(){
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let res = parseInt(num1) + parseInt(num2)
+
+        console.log(res)
+
+    }
+
+    //let firstname = "Anton"
+    //console.log(firstname)
+    
+    //const address = "Leyte"
+
+//let name = "Anton"; // String
+//let number = 12.2; // Number
+//let is_true = true; // Boolean
+//let empFile = null; // Empty Value
+//let not_assigned; // undefined. Declared but no value assigned
+//let obj = [{"name":"anton", "lastname":"gabia"}] //Object. Collection of Key value pairs
+//let arr = ["Anton","Gabia","Samar"] // Array
+
+// +. -, *, / are arithmetic operators
+
+//let firstNum = 1
+//let secondNum = 1
+//console.log(firstNum + secondNum)
+
+//Assignment operator
+//firstNum += secondNum;
+//console.log(firstNum)
+
+//Comparison operator
+//if (firstNum != secondNum) {
+//    console.log("Not equals")
+//}else if (firstNum == secondNum) { 
+    // == is Abstact Equality or Loose Equalty i.e, 5 == "5" is True
+    // === is Absolute Equality. 5 == "5" is False
+//    console.log("Equals")
+//} else{
+//    console.log("Either greater than or less than")
+//}
+
+//Logical Operators
+// && -> and operator. Both should be true, otherwise false
+// || -> or operator. Always true if the the statement has true, otherwise false
+// <, >, <=, >=, !, !=
+
+//let a = true
+//let b = false
+//let c = true
+
+//if (a && b || c){
+//    console.log("True")
+//}else{
+//    console.log("False")
+//}
+
+
+</script>
+
+</body>
+</html>
