@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+
+    <div class="container">
+        <label>Project:</label>
+        <input type="number" id="project" placeholder="Enter Project Grade" />
+
+        <label>Quiz:</label>
+        <input type="number" id="quiz" placeholder="Enter Quiz Grade" />
+
+        <label>Midterm:</label>
+        <input type="number" id="midterm" placeholder="Enter Midterm Grade" />
+
+        <label>Finals:</label>
+        <input type="number" id="finals" placeholder="Enter Finals Grade" />
+
+        <label>Activities:</label>
+        <input type="number" id="activities" placeholder="Enter Activities Grade" />
+
+        <button onclick="calculateAverage()">Calculate Average</button>
+
+        <div class="result">
+            <label>Average:</label>
+            <span id="average">--</span>
+        </div>
+
+        <div class="result">
+            <label>Remarks:</label>
+            <span id="remarks">--</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
