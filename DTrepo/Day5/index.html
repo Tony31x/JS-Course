@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+
+</head>
+<body>
+    <script>
+        //const findProd = {
+            //first_num: 4,
+           // second_num: 5,
+            //showProduct: () => {
+            //    console.log(`The product of ${findProd.first_num} and ${findProd.second_num} is: ${findProd.first_num * findProd.second_num}`);
+            //}
+        //}
+        //findProd.showProduct();
+        
+        //Array Destructuring
+        //const colors = ['Red', 'Green', 'Blue', 'Yellow', 'Purple'];
+        //const [firstColor, secondColor] = colors;
+        //console.log(`The first color is ${firstColor} and the second color is ${secondColor}.`);
+
+        //Object Destructuring
+        //const user = {name: 'Anton', age: 27, country: "PH"};
+        //const {name, age} = user;
+        //console.log(`The user's name is ${name} and they are ${age} years old.`);
+       
+        //Array Spread Operator
+        //const pokemon = ["Pikachu", "Charmander", "Bulbasaur", "Squirtle"];
+        //const morePokemon = [...pokemon, "Snorlax", "Mewtwo"];
+        //console.log(morePokemon);
+
+        //Object Spread Operator
+        //const digimon = {name: "Agumon", type: "Reptile", level: "Rookie"};
+        //const moreDigimon = {attribute: "Vaccine", partner: "Tai"};
+        //const mergedDigimon = {...digimon, ...moreDigimon};
+        //console.log(mergedDigimon);
+        
+        //Rest Parameters
+        function sum(...numbers) {
+            return numbers.reduce((a, b) => a + b, 0);
+        }
+        console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+        console.log(sum(10, 20, 30)); // Output: 60
+    </script>
+</body>
+</html>

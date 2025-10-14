@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    </head>
+<body>
+    <script>
+        //Object Destructuring
+        const student = {name: "Anton", age: 27};
+        const {name, age} = student;
+        console.log(`The student's name is ${name} and they are ${age} years old.`); 
+
+        //Array using spread operator
+        const frontend = ["React","Vue"];
+        const backend = ["Node", "Express"];
+        const fullstack = [...frontend, ...backend];
+        console.log(fullstack);
+
+        //Rest operator to compute average
+        function average(...numbers) {
+            const total = numbers.reduce((a, b) => a + b, 0);
+            return total / numbers.length;
+        }
+        console.log(average(10, 20, 30, 40, 50)); // Output: 30
+        console.log(average(5, 15, 25)); // Output: 15
+    </script>
+</body>
+</html>
